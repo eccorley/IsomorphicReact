@@ -20,7 +20,7 @@ function Router(routesFn) {
 
 /**
  * Capture routes as object that can be passed to Director.
- */
+ **/
 Router.prototype.parseRoutes = function(routesFn) {
   var routes = {};
 

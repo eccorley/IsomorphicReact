@@ -28,7 +28,9 @@
     "node-jsx": "^0.12.4",
     "react": "^0.12.2",
     "superagent": "^0.21.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "moment": "^2.9.0",
+    "marked": "^0.3.3"
   },
   "devDependencies": {
     "browserify": "~2.35.0",
