@@ -10,7 +10,7 @@ module.exports = function(match) {
   match('/posts', function(callback) {
     console.log('posts');
 
-    apiClient.get('/posts.json', function(err, res) {
+    apiClient.get('/posts', function(err, res) {
       if (err) return callback(err);
 
       var posts = res.body;
@@ -27,7 +27,7 @@ module.exports = function(match) {
   match('/posts/:id', function(id, callback) {
     console.log('post: ' + id);
 
-    apiClient.get('/posts/' + id + '.json', function(err, res) {
+    apiClient.get('/posts/' + id, function(err, res) {
       if (err) return callback(err);
 
       var post = res.body;

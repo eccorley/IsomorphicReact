@@ -9,7 +9,7 @@ var PostsNew = React.createClass({
             <div>
                 <h1>New Post</h1>
 
-                <form method="post" role="form" ref="form" action="/api/posts.json"
+                <form method="post" role="form" ref="form" action="/api/posts"
                     onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label htmlFor="post-title">Title</label>

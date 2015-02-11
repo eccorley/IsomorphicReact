@@ -4,6 +4,13 @@ var port = process.env.PORT || 3030;
 var apiPort = process.env.API_PORT || 3031;
 var api = require('./lib/api');
 var middleware = require('./app/router/middleware');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/test', function(err) {
+    if (err) {
+        console.log('Could not connect to mongodb on localhost. Ensure that you have mongodb running on localhost and mongodb accepts connections on standard ports!');
+    }
+});
 
 /**
  * This initializes our routes.
