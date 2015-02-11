@@ -1,0 +1,1 @@
+App based on Spike Brehm's Isomorphic Tutorial (github.com/spikebrehm/isomorphic-tutorial). Basis for exploration
